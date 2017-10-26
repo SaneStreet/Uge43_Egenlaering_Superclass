@@ -1,4 +1,3 @@
-/*
 -Hvad er en superclass i Java? Eksempel i kode og i UML. (I superclass deklarer man bare methoder man giver dem ikke værdi)
 -Hvad er en subclass? Eksempel i kode og i UML.
 En superclass er hvor man skriver metoder, og så kan subclasses, "hente"(public) metoder. Ved at skrive.
@@ -59,7 +58,4 @@ Omtil en string der printer:  "101 Raj lucknow", istedet for "Student@1fee6fc".
 Det bliver gjort ved simpel metode ala.:
 public String toString() {
 	return rollno+" "+name+" "+city;
-}
- */
-public class Main {
 }
