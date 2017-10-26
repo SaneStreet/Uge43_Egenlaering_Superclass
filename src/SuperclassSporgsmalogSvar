@@ -1,3 +1,5 @@
+//Husk at super() er ligegyldig, den "står" der lige meget hvad.
+
 -Hvad er en superclass i Java? Eksempel i kode og i UML. (I superclass deklarer man bare methoder man giver dem ikke værdi)
 -Hvad er en subclass? Eksempel i kode og i UML.
 En superclass er hvor man skriver metoder, og så kan subclasses, "hente"(public) metoder. Ved at skrive.
@@ -28,13 +30,13 @@ sbc.getMessage(); // Printer This is my Subclass Message: Example.
 
 
 -Hvad er forskellen mellem overriding methods og overloading methods i Java? Eksempel i kode.
-En Overload er når man har flere metoder af samme navn. Dog kan de have forskellige args.
+En -Overload- er når man har flere metoder af samme navn. Dog kan de have forskellige args.
 eks.:
 public class plus(int a, int b){return a+b;} // Her + den kun 2 tal sammen, og kan ikke mere end det.
 public class plus(int a, int b, int c){return a+b+c;} // Her + den 3 tal sammen.
 //Man kan så fortsætte videre her.
 
-Et Override  er når man ved super+sub classes "override" en methode.
+Et -Override-  er når man ved super+sub classes "override" en methode.
 class Animal {
    public void move() {System.out.println("Animals can move");}
 }
@@ -52,10 +54,11 @@ class Dog extends Animal {
    }
 
 
--Hvad er toString() metoden i Java? Eksempel i kode.
+-Hvad er -toString()- metoden i Java? Eksempel i kode.
 En toString() kan ændre et object ala.:    Student s1=new Student(101,"Raj","lucknow");
 Omtil en string der printer:  "101 Raj lucknow", istedet for "Student@1fee6fc".
 Det bliver gjort ved simpel metode ala.:
+
 public String toString() {
 	return rollno+" "+name+" "+city;
 }
